@@ -1,0 +1,37 @@
+<div class="create-course">
+  <h3><%= title %></h3>
+  <form method="POST" action="/courses/store">
+    <div class="mb-3">
+      <label for="courseName" class="form-label"> Name </label>
+      <input
+        type="text"
+        class="form-control"
+        id="courseName"
+        name="name"
+        value="<%= course.name %>"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="courseDescription" class="form-label"> Description </label>
+      <input
+        type="text"
+        class="form-control"
+        id="courseDescription"
+        name="description"
+        value="<%= course.description %>"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="courseImage" class="form-label"> Image Path </label>
+      <input
+        type="text"
+        class="form-control"
+        id="courseImage"
+        name="image"
+        value="<%= course.image %>"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+.app {
+  color: red;
+  font-size: 50px;
+}
+
+.course-detail {
+  margin-top: 20px;
+}
+.course-detail .course-thumbnail img {
+  width: 100%;
+}
